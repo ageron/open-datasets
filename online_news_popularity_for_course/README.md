@@ -3,7 +3,7 @@
 This is a slightly modified version of the OnlineNewsPopularity dataset available on UC Irvine's Machine Learning Repository at: https://archive.ics.uci.edu/ml/datasets/Online+News+Popularity
 
 It was modified for the purpose of using it in Machine Learning courses:
-* The `url` contained only URLs of format `"https://mashable.com/{year}/{month}/{day}/{slug}/"`. It was replaced with 2 columns:
+* The `url` column contained only URLs of format `"https://mashable.com/{year}/{month}/{day}/{slug}/"`. It was replaced with 2 columns:
   * `date` with format `"{year}-{month}-{day}`
   * `slug`
 * The `weekday_is_*` columns were replaced with a single `weekday` column with values `"Monday"`, `"Tuesday"`, `"Wednesday"`, `"Thursday"`, `"Friday"`, `"Saturday"` and `"Sunday"`. This was done to illustrate how to encode categorical columns.
