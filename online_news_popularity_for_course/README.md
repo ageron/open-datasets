@@ -133,7 +133,7 @@ Below is the information regarding the original dataset (from UCI's website).
 9. Class Distribution: the class value (shares) is continuously valued. We
                        transformed the task into a binary task using a decision
                        threshold of 1400.
-
+```
    Shares Value Range:   Number of Instances in Range:
    <  1400            18490
    >= 1400            21154
@@ -200,7 +200,7 @@ Summary Statistics:
       title_sentiment_polarity   -1.0000       1.0000       0.0714       0.2654
         abs_title_subjectivity    0.0000       0.5000       0.3418       0.1888
   abs_title_sentiment_polarity    0.0000       1.0000       0.1561       0.2263
-
+```
 
  Citation Request:
 
