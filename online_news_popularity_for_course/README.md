@@ -3,13 +3,13 @@
 This is a slightly modified version of the OnlineNewsPopularity dataset available on UC Irvine's Machine Learning Repository at: https://archive.ics.uci.edu/ml/datasets/Online+News+Popularity
 
 It was modified for the purpose of using it in Machine Learning courses:
-* The `url` contained only URLs of format `"https://mashable.com/{year}/{month}/{day}/{slug}/"`. It was replaced with 2 columns:
+* The `url` column contained only URLs of format `"https://mashable.com/{year}/{month}/{day}/{slug}/"`. It was replaced with 2 columns:
   * `date` with format `"{year}-{month}-{day}`
   * `slug`
 * The `weekday_is_*` columns were replaced with a single `weekday` column with values `"Monday"`, `"Tuesday"`, `"Wednesday"`, `"Thursday"`, `"Friday"`, `"Saturday"` and `"Sunday"`. This was done to illustrate how to encode categorical columns.
 * Similarly, the `data_channel_is_*` columns were replaced with a single `data_channel` column with values `"Lifestyle"`, `"Entertainment"`, `"Business"`, `"Social media"`, `"Technology"` and `"World"`.
 * The `num_*` columns were renamed to `n_*` for consistency.
-* The `shares` columns was renamed to `n_shares` for consistency.
+* The `shares` column was renamed to `n_shares` for consistency.
 * The `self_reference_avg_sharess` column was renamed to `self_reference_avg_shares`, as it was presumably a typo.
 
 Below is the information regarding the original dataset (from UCI's website).
@@ -133,7 +133,7 @@ Below is the information regarding the original dataset (from UCI's website).
 9. Class Distribution: the class value (shares) is continuously valued. We
                        transformed the task into a binary task using a decision
                        threshold of 1400.
-
+```
    Shares Value Range:   Number of Instances in Range:
    <  1400            18490
    >= 1400            21154
@@ -200,7 +200,7 @@ Summary Statistics:
       title_sentiment_polarity   -1.0000       1.0000       0.0714       0.2654
         abs_title_subjectivity    0.0000       0.5000       0.3418       0.1888
   abs_title_sentiment_polarity    0.0000       1.0000       0.1561       0.2263
-
+```
 
  Citation Request:
 
