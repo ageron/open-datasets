@@ -6,8 +6,8 @@ It was modified for the purpose of using it in Machine Learning courses:
 * The `url` column contained only URLs of format `"https://mashable.com/{year}/{month}/{day}/{slug}/"`. It was replaced with 2 columns:
   * `date` with format `"{year}-{month}-{day}`
   * `slug`
-* The `weekday_is_*` columns were replaced with a single `weekday` column with values `"Monday"`, `"Tuesday"`, `"Wednesday"`, `"Thursday"`, `"Friday"`, `"Saturday"` and `"Sunday"`. This was done to illustrate how to encode categorical columns.
-* Similarly, the `data_channel_is_*` columns were replaced with a single `data_channel` column with values `"Lifestyle"`, `"Entertainment"`, `"Business"`, `"Social media"`, `"Technology"` and `"World"`.
+* The `weekday_is_*` columns were replaced with a single `weekday` column with values ranging from 0 (Monday) to 6 (Sunday). This was done to illustrate how to encode integer categorical columns.
+* Similarly, the `data_channel_is_*` columns were replaced with a single `data_channel` column with values `"Lifestyle"`, `"Entertainment"`, `"Business"`, `"Social media"`, `"Technology"` and `"World"`, to illustrate text categorical columns.
 * The `num_*` columns were renamed to `n_*` for consistency.
 * The `shares` column was renamed to `n_shares` for consistency.
 * The `self_reference_avg_sharess` column was renamed to `self_reference_avg_shares`, as it was presumably a typo.
