@@ -9,8 +9,12 @@ It was modified for the purpose of using it in Machine Learning courses:
 * The `weekday_is_*` columns were replaced with a single `weekday` column with values ranging from 0 (Monday) to 6 (Sunday). This was done to illustrate how to encode integer categorical columns.
 * Similarly, the `data_channel_is_*` columns were replaced with a single `data_channel` column with values `"Lifestyle"`, `"Entertainment"`, `"Business"`, `"Social media"`, `"Technology"` and `"World"`, to illustrate text categorical columns.
 * The `num_*` columns were renamed to `n_*` for consistency.
-* The `shares` column was renamed to `n_shares` for consistency.
+* The `shares` column was replaced with a `n_shares_percentile` column containing the corresponding percentiles (i.e., assuming `df` is a Pandas dataframen containing the dataset, this column is `df["n_shares_percentile"] = df["shares"].rank() / len(df)`).
 * The `self_reference_avg_sharess` column was renamed to `self_reference_avg_shares`, as it was presumably a typo.
+
+The [generate_online_news_for_course.ipynb](generate_online_news_for_course.ipynb) notebook contains the code that converts the original dataset into this dataset.
+
+The objective is to build a model that can predict the `n_shares_percentile` column based on some or all of the other columns.
 
 Below is the information regarding the original dataset (from UCI's website).
 
